@@ -2,7 +2,7 @@
 
 
 
-!Note ⚠️
+⚠️ Note ⚠️
 ````
 When you run 'detect.sh' it will open another terminal and it will show only ARP_Replay packet. Inspecting the packet you can easily identify the packet are crafted or Not. 
 
