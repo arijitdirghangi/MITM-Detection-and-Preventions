@@ -8,21 +8,17 @@ cyan='\033[0;36m'
 BCyan='\033[1;36m'
 clear='\033[0m'
 
-
-interface=ens33
-# interface=$1
+interface=$1
 re=".{2}:.{2}:.{2}:.{2}:.{2}:.{2}"
 
+#interface=ens33
 
 #First Terminal
-
-
 solutions(){
 
 echo -e "\n"
 
 read -p "`echo -e ${red}{!}${clear}` If you want `echo -e ${BCyan}solutions${clear}` press (y/n) : " value
-
 
 if [ ${value} == "y" ] || [ ${value} == "Y" ]; then
 
@@ -66,7 +62,6 @@ else [ ${value} == "n" ] || [ ${value} == "N" ]
         echo -e "Quiting . . .  "
         kill -9 $xterm_pid
         exit 0;
-
 fi
 
 }
@@ -76,7 +71,6 @@ xterm -e /bin/bash -l -c "tcpdump -t -i ${interface} arp and 'arp[6:2] == 2' -e"
 
 echo -e "${cyan}[*]${clear} Press ${BCyan}any${clear} key for further ${yellow}Process${clear} "
 read -n 1;
-
 
 tcpdump -c 2 -t -i ${interface} arp and 'arp[6:2] == 2' > mac.txt 2> /dev/null
 
