@@ -10,7 +10,7 @@
 
 </h1>
 
->**I build this Project in Cybermaniya of Jetking 2022 that Detect MITM Attack and also give you the Soluions.**
+>**I build this Project in Cybermaniya of Jetking 2022 that Detect MITM Attack and also give you the Solutions.**
 
 
 
