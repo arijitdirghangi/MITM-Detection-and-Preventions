@@ -5,7 +5,7 @@
 </h1>
 
 <h1 align="center">
-   MITM Detection & Prevention <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVOteejinhgpZJ_jPME-JwXaH84aHkVLUgVf2mzPgjYn0znu8lQuRpnBVGmt01lmhXLU&usqp=CAU" alt="fuck" width="25px"></a>
+   MITM Detection & Prevention <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVOteejinhgpZJ_jPME-JwXaH84aHkVLUgVf2mzPgjYn0znu8lQuRpnBVGmt01lmhXLU&usqp=CAU" alt="logo" width="25px"></a>
   <br>
 
 </h1>
